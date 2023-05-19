@@ -18,10 +18,6 @@ public class AuditorAwareImpl implements AuditorAware<String> {
 		IAuthenticationFacade iAuthenticationFacade = new IAuthenticationFacadeImpl();
 		return Optional.of(iAuthenticationFacade.getUserame());
 		
-//		Authentication loggedInUser = SecurityContextHolder.getContext().getAuthentication();
-//		String username = loggedInUser.getName();
-//		
-//		return Optional.of(username);
 	}
 
 }
